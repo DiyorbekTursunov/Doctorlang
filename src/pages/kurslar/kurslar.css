@@ -1,0 +1,129 @@
+.wrapper {
+    background-color: var(--main-background);
+}
+
+.lesson__cars {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* justify-content: space-evenly; */
+    padding-top: 86px;
+}
+
+.lesson__card {
+    max-width: 320px;
+    padding: 8px;
+    background-color: #E5F0F1;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 86px;
+    margin-bottom: 80px;
+}
+
+.lesson__card__icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--green);
+    font-size: 28px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 0;
+}
+
+.lesson__card__img {
+    max-width: 304px;
+    margin-bottom: 12px;
+}
+
+.lesson__card__heading__title {
+    font-size: 30px;
+    color: #003C3C;
+    margin-bottom: 9px;
+}
+
+.lesson__card__about__lesson {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 21px;
+}
+
+.lesson__card__about__lesson div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--black-gray);
+}
+
+.lesson__card__price {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.lesson__card__price__title__discount {
+    color: var(--black-gray);
+    font-size: 18px;
+}
+
+.lesson__card__price__title__about {
+    color: #FF0404;
+    font-size: 18px;
+}
+
+.lesson__card__more__about {
+    cursor: pointer;
+}
+
+.lesson__card__price__title__start {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    width: 96px;
+    height: 40px;
+    border: none;
+}
+
+.lesson__card__about__comment {
+    position: absolute;
+    font-size: 11px;
+    max-width: 149px;
+    padding: 9px 5px;
+    background-color: var(--white);
+    border: .5px solid var(--black);
+    border-radius: 10px;
+    top: 215px;
+    right: 5px;
+}
+
+.lesson__card__about__comment img {
+    position: absolute;
+    bottom: -12px;
+    left: 10px;
+    transform: rotate(-89deg);
+}
+
+@media only screen and (max-width: 955px) {
+    .lesson__cars{
+        grid-template-columns: 100%;
+        padding-top: 130px;
+        padding-bottom: 50px;
+        gap: 57px;
+    }
+    .lesson__card{
+        margin-top: 100px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .lesson__card__img{
+        width: 250px;
+        
+    }
+}

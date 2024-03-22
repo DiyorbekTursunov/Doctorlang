@@ -1,0 +1,124 @@
+.menu__wrapper {
+    padding: 24px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 79px;
+    z-index: 50;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.menu__functions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu__navbar__language,
+.menu__navbar__language_two {
+    width: 96px;
+    height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    /* background-color: var(--white); */
+    border-radius: 10px;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu__navbar__language__text,
+.menu__navbar__language__text_two {
+    font-size: 20px;
+    color: var(--green)
+}
+
+
+
+.menu__navbar__mode__light__text {
+    font-size: 15px;
+    color: var(--dark-blue);
+}
+
+.menu__navbar__mode__dark__text {
+    font-size: 15px;
+    color: var(--dark-blue);
+}
+
+.menu__navbar__mode__light,
+.menu__navbar__mode__dark {
+    width: 96px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-blue);
+}
+
+.menu__navbar__mode__dark_two,
+.menu__navbar__mode__light_two {
+    width: 96px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-blue);
+    margin-top: 10px;
+}
+
+.menu__social_media {
+    margin-top: 22px;
+    display: flex;
+    gap: 14px;
+}
+.menu__social_media a img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 985px) {
+    .menu__wrapper {
+        display: block;
+    }
+}
+
+.transition {
+    transition: width 2s;
+}
+
+.menu__nav__ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+}
+
+.menu__nav__list_item a {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.menu__navbar__functions__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.isOpen {
+    left: 1000px;
+}

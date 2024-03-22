@@ -1,0 +1,192 @@
+.login__wrapper {
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.login__card_perent {
+    padding-top: 150px;
+    padding-bottom: 83px;
+}
+
+.login__card {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 30px;
+    padding-right: 120px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .5px solid var(--black);
+    border-radius: 10px;
+}
+
+.login__form {
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 50px 68px;
+}
+
+.login__form__heading {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: var(--font-weight-min);
+    margin-bottom: 44px;
+}
+
+.login__form_email label,
+.login__form_phone_number label,
+.login__form_password label {
+    display: flex;
+    align-items: center;
+}
+
+.login__form__ather_platform {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.login__form__google,
+.login__form__facebook {
+    background-color: transparent;
+    border: none;
+}
+
+.login__form_phone_number {
+    display: none;
+}
+
+.login__form_email {
+    margin-bottom: 22px;
+}
+
+.login__form_password {
+    margin-bottom: 35px;
+}
+
+.login__form_email,
+.login__form_password {
+    background-color: var(--white);
+    border-radius: 20px;
+    max-width: 300px;
+    height: 45px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.login__form_email input,
+.login__form_password input {
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    height: 30px;
+}
+
+
+.login__form__btn {
+    width: 100%;
+    font-size: 25px;
+    padding: 5px 0;
+    background-color: var(--light-green);
+    color: var(--white);
+    border: none;
+    margin-bottom: 16px;
+}
+
+.login__form__text {
+    color: var(--white);
+}
+
+
+@media only screen and (max-width: 1130px) {
+    .login__image {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .login__card {
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .login__image {
+        display: none;
+    }
+    .login__card{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 552px) {
+    .login__form__heading{
+        font-size: 40px;
+        text-align: center;
+    }  
+    .login__form{
+        padding: 30px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .login__form_email{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login__form_email input{
+        width: 85%;
+    }
+    .login__form_password{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login__form_password input{
+        width: 85%;
+    }
+    .login__form__btn , .login__form__ather_platform{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    .login__form {
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 427px) {
+    .login__card{
+        padding: 0 0;
+        background-color: transparent;
+    }
+    .login__form{
+        width: 100%;
+    }
+    .login__form__ather_platform,.login__form__btn,.login__form_password,.login__form_email{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .login__form__btn,.login__form_email,.login__form_password{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 333px) {
+    .login__form__heading{
+        font-size: 35px;
+    }
+    .login__form__text{
+        font-size: 14px;
+    }
+}
